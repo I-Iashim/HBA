@@ -1,0 +1,100 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+section{
+    padding: 0 25px;
+
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.logo-container{
+    max-height: 150px;
+    max-width: 150px;
+
+}
+.brand-logo{
+    height: 100%;
+    width:  100%;
+}
+.nav-container{
+    height: 100%;
+    width: 100%;
+}
+.nav-container div{
+    height: 100%;    
+}
+nav{
+    height: 100%;
+    display: flex;
+}
+.nav-container ul{
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.nav-container ul li{
+    align-content   : center;
+    padding: 0px 5px;
+}
+.nav-links{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+.nav-links:hover{
+    color: white;
+    padding: 5px 20px;
+    background-color: #F14E23;
+    border-radius: 40px;
+}
+.nav-btn-container{
+    height: 100%;
+    max-width: 200px;
+    width: 100%;
+    align-content: center;
+}
+.btn-container{
+    margin: 0 auto;
+    width: 100%;
+}
+.req-btn{
+    height: 50px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #F6721E;
+    border: none;
+    border-radius: 40px;
+    font-size: 17Px;
+    font-weight: 600;
+    transition: all .50s ease;
+    
+}
+.req-btn :hover{
+    color: black;
+}
+.btn-container button a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 15px;
+    height: 50px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #F6721E;
+    border: none;
+    border-radius: 40px;
+    font-size: 17Px;
+    font-weight: 600;
+    transition: all .50s ease;
+}
