@@ -5,6 +5,7 @@ html{
     scroll-behavior: smooth;
 }
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -160,7 +161,7 @@ nav ul li a:hover {
     width: 100%;
     height: fit-content;
     height: 1000px;
-    background-image: url('../images/4.jpg');
+    background-image: url('../images/1.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -198,7 +199,7 @@ nav ul li a:hover {
     width: 50px;
     border-radius: 10px;
     position: fixed;
-    right: 0;
+    left: 100%;
     z-index: 1;
     top: 50%;
     align-content: center;
@@ -490,7 +491,7 @@ nav ul li a:hover {
     height: 800px;
     max-width: 100vw;
     width: 100%;
-    background-image: url("../images/aboutImages/1.jpg");
+    background-image: url("../images/2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
@@ -593,7 +594,7 @@ nav ul li a:hover {
 
 .aboutSectoin{
     padding: 0;
-
+    
 }
 .aboutHeading h3{
     font-size: 60px;
@@ -615,7 +616,7 @@ nav ul li a:hover {
     animation-timeline: view();
     animation-range: entry 20% cover 50vh;
 }
-.entry{
+.enter{
     
     animation: entry both ease ;
     animation-timeline: view();
@@ -645,8 +646,9 @@ nav ul li a:hover {
 }
 .techImage{
     height: 400px;
+
 }
-.aboutImage, .aboutImage img{
+.aboutImage img{
     height: 300px;
     max-width: 500px;
     width: 100%;
@@ -662,6 +664,8 @@ nav ul li a:hover {
     font-size: 16px;
     line-height: 1;
 }
+
+
 
 
 
@@ -702,16 +706,18 @@ nav ul li a:hover {
     color: #F6721E;
     font-size: 70px;
 }
-.mission:hover{
+.missionOuter:hover{
     transform: scale(1.1);
 }
 .missionOuter{
+    transition: all .5s ease;
     height: 350px;
     max-width: 270px;
     width: 100%;
 }
 .ourWork{
     margin-top: 150px;
+    margin-bottom: 100px;
 }
 .ourWork .aboutHeading{
     margin-bottom: 100px;
@@ -761,20 +767,148 @@ nav ul li a:hover {
     font-weight: 500;
 }
 
+.shipment h3{
+    font-size: 40px;
+    color: #F6721E;
+
+}
+.shipment p{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.shipment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.underline{
+    border-bottom: 3px solid #F6721E;
+    margin-top: 25px;
+    width: 180px;
+    
+}
+.trucks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.trucks h3{
+        
+        font-size: 40px;
+        color: #F6721E;
+
+}
+.trucks p{
+    
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
 
 
 
 
 
+.sec-5{
+    padding: 0;
+}
+.serviceSection{
+    height: auto;
+    margin: 100px 0px;
+}
+.serviceHeadingContainer{
+    height: 500px;
+    max-width: 100vw;
+    width: 100%;
+    background: linear-gradient(#ff4c1a,#1f0a04);
+}
+.serviceHeading{
+    margin-top: 80px;
+    color: white;
+    font-size: 40px;
+    padding: 80px 0 0 80px ;
+}
+.serviceHeading2{
+    font-size: 25px;
+    color: white;
+    padding: 50px 0 0 80px;
+}
+.serviceSectionContent{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    gap: 20px;
+}
+.serviceText{
+    padding-left: 40px;
+    margin-top: 100px;
+}
+.part1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 100px;
+    
+    padding-right: 40px;
+}
+.part1 p{
+    max-width: 1000px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
 
 
+}
+.part1 img{
+    height: 500px;
+    max-width: 500px;
+    width: 100%;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.serviceBox{
+    background-color: #F6721E;
+    height: 275px;
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 10px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.serviceBox h4{
+    font-size: 45px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.serviceBox p{
+    color: #2a2a2a;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
 
-
-
-
-
-
-
+}
+.serviceBox:hover{
+    box-shadow: 0px 1px 10px 1px black;
+}
 
 
 
@@ -805,16 +939,15 @@ nav ul li a:hover {
     from{
         transform: scale(.2);
         opacity: 0;
-        transform: translateX(200px);
+        transform: translateY(500px);
     }
     to {
         transform: scale(1);
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
     
 }
-
 
 
 
